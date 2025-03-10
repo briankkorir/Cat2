@@ -1,0 +1,68 @@
+a)i)Network connection: it may be the internet connection is unstable and not strong enough to load the image file incorrect file path. 
+  ii)The image may not have been placed in the correct file path leading to the error.
+b)html snippet
+  <img src="product.jpg" alt="Stylish Sneakers class="image"">
+  css snippet
+  .image{
+    max-width: 100%;
+    height: auto;
+  }
+c)first of all in the head you must add a link to font awesome library, this allows the icons to be displayed.
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   then the snippet of the html it can either be in the footer or any location you want as long as it is aesthetically pleasing
+  <div class="social-icons">
+  <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+  </div>
+    and finally the styling
+  <style>
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    padding: 20px;
+  }
+
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background-color: #333; 
+    color: #fff; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+
+ 
+  .social-icon:hover {
+    background-color: #555; 
+    transform: scale(1.1); 
+  }
+
+ 
+  .social-icon.facebook {
+    background-color: blue; 
+  }
+
+  .social-icon.instagram {
+    background-color: pink; 
+  }
+
+  .social-icon.twitter {
+    background-color: blue; 
+  } 
+  
+</style>
+
+    
